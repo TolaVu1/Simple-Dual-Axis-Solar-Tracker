@@ -31,7 +31,7 @@ Dưới đây là mô tả nguyên lý hoạt động của hệ thống:
 2. **Vi điều khiển (ESP32)**:
    - Thu thập dữ liệu từ các cảm biến LDR.
    - So sánh giá trị ánh sáng từ các cặp cảm biến để xác định hướng có ánh sáng mạnh nhất.
-   - Nếu phát hiện sự chênh lệch ánh sáng lớn, nó sẽ điều chỉnh góc của các động cơ servo để tối ưu hướng tấm pin mặt trời.
+   - Nếu phát hiện sự chênh lệch ánh sáng đủ lớn, nó sẽ điều chỉnh góc của các động cơ servo để tối ưu hướng tấm pin mặt trời.
 
 Hình 1
      ![Hình 1](dual-axis-solar-tracker.png)
