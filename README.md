@@ -4,7 +4,7 @@
 ## **1. Đặt vấn đề**
 Đối với hầu hết các trường hợp, các tấm pin mặt trời phổ biến hàng ngày của chúng ta chạy với hiệu suất **18-20%**, nghĩa là chúng chỉ chuyển đổi 18-20% lượng ánh sáng mặt trời nhận được thành điện năng.  
 
-Bài toán đặt ra là chúng ta cần **cải thiện hiệu quả của các tấm pin** hoặc tìm cách **nhận được nhiều hơn** từ các tấm pin mặt trời hiện tại.  
+Bài toán đặt ra là chúng ta cần **cải thiện hiệu quả của các tấm pin** hoặc tìm cách **nhận được nhiều ánh sáng hơn** .  
 
 Cách đơn giản nhất để tối ưu hóa năng lượng là điều chỉnh **tấm pin hướng về mặt trời** giống như cách hoa hướng dương hoạt động.  
 
