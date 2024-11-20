@@ -1,5 +1,5 @@
 # Simple-Dual-Axis-Solar-Tracker
-# **Đề Tài: Mô Hình Bộ điều hướng pin Mặt Trời**
+# **Đề Tài: Mô Hình Bộ Điều Hướng Pin Mặt Trời**
 
 ## **1. Đặt vấn đề**
 Đối với hầu hết các trường hợp, các tấm pin mặt trời phổ biến hàng ngày của chúng ta chạy với hiệu suất **18-20%**, nghĩa là chúng chỉ chuyển đổi 18-20% lượng ánh sáng mặt trời nhận được thành điện năng.  
