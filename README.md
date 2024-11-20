@@ -33,7 +33,7 @@ Dưới đây là mô tả nguyên lý hoạt động của hệ thống:
    - So sánh giá trị ánh sáng từ các cặp cảm biến để xác định hướng có ánh sáng mạnh nhất.
    - Nếu phát hiện sự chênh lệch ánh sáng lớn, nó sẽ điều chỉnh góc của các động cơ servo để tối ưu hướng tấm pin mặt trời.
 
-     ![Mô tả ảnh]()
+     ![Mô tả ảnh](dual-axis-solar-tracker.png)
 
 ---
 
