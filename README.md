@@ -35,6 +35,7 @@ Dưới đây là mô tả nguyên lý hoạt động của hệ thống:
 
 Hình 1
      ![Hình 1](dual-axis-solar-tracker.png)
+     
 Hình 2
      ![Hình 2](so-do-khoi.png)
 
