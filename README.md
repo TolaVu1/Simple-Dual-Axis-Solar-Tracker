@@ -96,8 +96,8 @@ Hệ thống hoạt động dựa trên sự chênh lệch cường độ ánh s
 #### Lệnh ví dụ:
 - `AUTO_ON`: Bật chế độ tự động.
 - `AUTO_OFF`: Tắt chế độ tự động.
-- `MANUAL_HORIZONTAL:UP`: Di chuyển động cơ ngang lên.
-- `MANUAL_HORIZONTAL:DOWN`: Di chuyển động cơ ngang xuống.
+- `MANUAL_HORIZONTAL:UP`: Di chuyển động cơ ngang sang phải.
+- `MANUAL_HORIZONTAL:DOWN`: Di chuyển động cơ ngang sang trái.
 - `MANUAL_VERTICAL:UP`: Di chuyển động cơ dọc lên.
 - `MANUAL_VERTICAL:DOWN`: Di chuyển động cơ dọc xuống.
 
