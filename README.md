@@ -18,6 +18,9 @@ Dự án "Simple Dual-Axis Solar Tracker" được triển khai nhằm giải qu
 
 ## 2. Cấu tạo
 
+**Hình ảnh thực tế:**
+![Solar Tracker](images/anh.png)
+
 Hệ thống theo dõi mặt trời được cấu tạo bởi:
 
 - **ESP32 DOIT Devkit V1**: Bộ điều khiển chính, có nhiệm vụ xử lý tín hiệu và điều khiển động cơ.
@@ -61,14 +64,10 @@ Hệ thống hoạt động dựa trên sự chênh lệch cường độ ánh s
 ---
 
 **Sơ đồ khối:**
-![block_diagram](so_do_khoi.png)
-
----
+![block_diagram](images/so_do_khoi.png)
 
 **Sơ đồ kết nối phần cứng:**
 ![Fritzing Diagram](images/fritzing.png)
-
----
 
 **Giao diện Dashboard:**
 ![Node-RED Dashboard](images/dashboard_UI.png)
@@ -77,15 +76,13 @@ Hệ thống hoạt động dựa trên sự chênh lệch cường độ ánh s
 
 ### 3. **Chế độ điều khiển**
 - **Chế độ tự động**:
-  - Mặc định là chế độ tự động.
   - Điều chỉnh góc servo tự động dựa trên giá trị LDR.
 - **Chế độ thủ công**:
   - Sử dụng các nút trên Node-RED để điều khiển servo thủ công.
-
----
-
+  - Nút BẬT/TẮT chế độ thủ công nằm ở chính giữa.
+  - Các nút điều hướng gồm UP, DOWN, RIGHT, LEFT.
 **Luồng Node-RED:**
-![Node-RED Flow](node-red_flow.png)
+![Node-RED Flow](images/node-red_flow.png)
 
 ---
 
