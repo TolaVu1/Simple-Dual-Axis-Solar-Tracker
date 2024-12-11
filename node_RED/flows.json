@@ -1,0 +1,530 @@
+[
+    {
+        "id": "2ec32ea467ceae3f",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "cf861e008453e3a5",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-custom",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0b0471",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#555dd3",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "reset": false
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#4B7930",
+                    "value": "#555dd3",
+                    "edited": true
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#4060dd",
+                    "edited": true
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#000000",
+                    "edited": true
+                },
+                "group-textColor": {
+                    "value": "#9297e3",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#000000",
+                    "edited": true
+                },
+                "group-backgroundColor": {
+                    "value": "#000000",
+                    "edited": true
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#555dd3",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#000000",
+                    "edited": true
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "e94efd3a76f9d311",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "aa02f20a5d494f24a63fadff434be34b.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "5d1f2e30392ccfb2",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "92cbd79cded98731",
+        "type": "ui_tab",
+        "name": "Solar_Tracker",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "7160a25f9b99e990",
+        "type": "ui_group",
+        "name": "Hiển thị cường độ ánh sáng",
+        "tab": "92cbd79cded98731",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "287ca65e569153a3",
+        "type": "ui_group",
+        "name": "Điều khiển Solar_Tracker",
+        "tab": "92cbd79cded98731",
+        "order": 2,
+        "disp": true,
+        "width": 12,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5d1f2e30392ccfb2",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "ca_cert_hivemq.h",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "522694b1be4b0cc2",
+        "type": "ui_spacer",
+        "z": "2ec32ea467ceae3f",
+        "name": "spacer",
+        "group": "287ca65e569153a3",
+        "order": 1,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "b214c27048258240",
+        "type": "ui_spacer",
+        "z": "2ec32ea467ceae3f",
+        "name": "spacer",
+        "group": "287ca65e569153a3",
+        "order": 3,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "8bff61e215c1e172",
+        "type": "ui_spacer",
+        "z": "2ec32ea467ceae3f",
+        "name": "spacer",
+        "group": "287ca65e569153a3",
+        "order": 4,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "4a82a545e5d9c86f",
+        "type": "ui_spacer",
+        "z": "2ec32ea467ceae3f",
+        "name": "spacer",
+        "group": "287ca65e569153a3",
+        "order": 5,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "b9ca846105203b5f",
+        "type": "ui_spacer",
+        "z": "2ec32ea467ceae3f",
+        "name": "spacer",
+        "group": "287ca65e569153a3",
+        "order": 6,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "ec2c498431562344",
+        "type": "ui_spacer",
+        "z": "2ec32ea467ceae3f",
+        "name": "spacer",
+        "group": "287ca65e569153a3",
+        "order": 10,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "612dc29f29453894",
+        "type": "ui_spacer",
+        "z": "2ec32ea467ceae3f",
+        "name": "spacer",
+        "group": "287ca65e569153a3",
+        "order": 11,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "9caf2c728cd7e86f",
+        "type": "ui_spacer",
+        "z": "2ec32ea467ceae3f",
+        "name": "spacer",
+        "group": "287ca65e569153a3",
+        "order": 12,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "ceb54dc9128468ec",
+        "type": "ui_spacer",
+        "z": "2ec32ea467ceae3f",
+        "name": "spacer",
+        "group": "287ca65e569153a3",
+        "order": 13,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "705bcaa826eabaf7",
+        "type": "ui_spacer",
+        "z": "2ec32ea467ceae3f",
+        "name": "spacer",
+        "group": "287ca65e569153a3",
+        "order": 15,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "2256518de6b24e17",
+        "type": "ui_spacer",
+        "z": "2ec32ea467ceae3f",
+        "name": "spacer",
+        "group": "287ca65e569153a3",
+        "order": 16,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "24570306d3168774",
+        "type": "ui_spacer",
+        "z": "2ec32ea467ceae3f",
+        "name": "spacer",
+        "group": "287ca65e569153a3",
+        "order": 17,
+        "width": 5,
+        "height": 1
+    },
+    {
+        "id": "7394c8ec7228b518",
+        "type": "mqtt in",
+        "z": "2ec32ea467ceae3f",
+        "name": "",
+        "topic": "solar/light",
+        "qos": "0",
+        "datatype": "buffer",
+        "broker": "e94efd3a76f9d311",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 340,
+        "y": 300,
+        "wires": [
+            [
+                "b7d814bd1b42e27b",
+                "d1890cac81755121"
+            ]
+        ]
+    },
+    {
+        "id": "d3a4827e199c0a2c",
+        "type": "mqtt out",
+        "z": "2ec32ea467ceae3f",
+        "name": "",
+        "topic": "solar/control",
+        "qos": "0",
+        "retain": "true",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "e94efd3a76f9d311",
+        "x": 590,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "b7d814bd1b42e27b",
+        "type": "ui_text",
+        "z": "2ec32ea467ceae3f",
+        "group": "7160a25f9b99e990",
+        "order": 1,
+        "width": 12,
+        "height": 6,
+        "name": "",
+        "label": "",
+        "format": "{{msg.payload}}",
+        "layout": "row-center",
+        "className": "",
+        "style": true,
+        "font": "Arial Black,Arial Black,Gadget,sans-serif",
+        "fontSize": "30",
+        "color": "#ffffff",
+        "x": 550,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "764bea156e301b43",
+        "type": "ui_switch",
+        "z": "2ec32ea467ceae3f",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "287ca65e569153a3",
+        "order": 8,
+        "width": 2,
+        "height": 2,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "solar/control",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "AUTO_OFF",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "AUTO_ON",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 330,
+        "y": 400,
+        "wires": [
+            [
+                "d3a4827e199c0a2c"
+            ]
+        ]
+    },
+    {
+        "id": "ef3df4df43136d7c",
+        "type": "ui_button",
+        "z": "2ec32ea467ceae3f",
+        "name": "UP",
+        "group": "287ca65e569153a3",
+        "order": 2,
+        "width": 2,
+        "height": 2,
+        "passthru": false,
+        "label": "UP",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "yellow",
+        "className": "",
+        "icon": "",
+        "payload": "MANUAL_VERTICAL:UP",
+        "payloadType": "str",
+        "topic": "solar/control",
+        "topicType": "msg",
+        "x": 330,
+        "y": 440,
+        "wires": [
+            [
+                "d3a4827e199c0a2c"
+            ]
+        ]
+    },
+    {
+        "id": "e89430323f2dede7",
+        "type": "ui_button",
+        "z": "2ec32ea467ceae3f",
+        "name": "LEFT",
+        "group": "287ca65e569153a3",
+        "order": 7,
+        "width": 2,
+        "height": 2,
+        "passthru": false,
+        "label": "LEFT",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "yellow",
+        "className": "",
+        "icon": "",
+        "payload": "MANUAL_HORIZONTAL:DOWN",
+        "payloadType": "str",
+        "topic": "solar/control",
+        "topicType": "msg",
+        "x": 330,
+        "y": 480,
+        "wires": [
+            [
+                "d3a4827e199c0a2c"
+            ]
+        ]
+    },
+    {
+        "id": "3a117219074c1236",
+        "type": "ui_button",
+        "z": "2ec32ea467ceae3f",
+        "name": "DOWN",
+        "group": "287ca65e569153a3",
+        "order": 14,
+        "width": 2,
+        "height": 2,
+        "passthru": false,
+        "label": "DOWN",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "yellow",
+        "className": "",
+        "icon": "",
+        "payload": "MANUAL_VERTICAL:DOWN",
+        "payloadType": "str",
+        "topic": "solar/control",
+        "topicType": "msg",
+        "x": 340,
+        "y": 520,
+        "wires": [
+            [
+                "d3a4827e199c0a2c"
+            ]
+        ]
+    },
+    {
+        "id": "172953692a92ee64",
+        "type": "ui_button",
+        "z": "2ec32ea467ceae3f",
+        "name": "RIGHT",
+        "group": "287ca65e569153a3",
+        "order": 9,
+        "width": 2,
+        "height": 2,
+        "passthru": false,
+        "label": "RIGHT",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "yellow",
+        "className": "",
+        "icon": "",
+        "payload": "MANUAL_HORIZONTAL:UP",
+        "payloadType": "str",
+        "topic": "solar/control",
+        "topicType": "msg",
+        "x": 340,
+        "y": 560,
+        "wires": [
+            [
+                "d3a4827e199c0a2c"
+            ]
+        ]
+    },
+    {
+        "id": "d1890cac81755121",
+        "type": "debug",
+        "z": "2ec32ea467ceae3f",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 560,
+        "y": 260,
+        "wires": []
+    }
+]
