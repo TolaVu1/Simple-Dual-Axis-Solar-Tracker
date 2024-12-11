@@ -4,30 +4,27 @@
 
 ## 1. Đặt vấn đề
 
-Đối với hầu hết các trường hợp, các tấm pin mặt trời phổ biến hàng ngày của chúng ta chạy với hiệu suất 18-20%, nghĩa là chúng chỉ chuyển đổi 18-20% lượng ánh sáng mặt trời nhận được thành điện năng.
+Hiện nay, trong bối cảnh nhu cầu sử dụng năng lượng ngày càng tăng cao, việc khai thác và sử dụng các nguồn năng lượng tái tạo đang trở thành xu hướng tất yếu. Pin mặt trời, một trong những giải pháp năng lượng sạch và bền vững, đã được ứng dụng rộng rãi. Tuy nhiên, hiệu suất chuyển đổi của các tấm pin mặt trời phổ biến chỉ đạt 18-20%, tức là chỉ tận dụng được một phần nhỏ lượng ánh sáng mặt trời nhận được. Điều này đặt ra thách thức lớn trong việc tối ưu hóa và khai thác tối đa tiềm năng của năng lượng mặt trời.
 
-Bài toán đặt ra là chúng ta cần cải thiện hiệu quả của các tấm pin hoặc tìm cách nhận được nhiều ánh sáng hơn.
+Một giải pháp mang tính khả thi là cải thiện hiệu quả sử dụng ánh sáng mặt trời bằng cách điều chỉnh các tấm pin theo hướng mặt trời, tương tự như cách hoa hướng dương luôn hướng về nguồn sáng. Thực tế cho thấy, các hệ thống pin mặt trời có cơ chế theo dõi hướng mặt trời (solar tracker) có thể tăng sản lượng năng lượng lên đến 30% so với các tấm pin cố định.
 
-Cách đơn giản nhất để tối ưu hóa năng lượng là điều chỉnh tấm pin hướng về mặt trời giống như cách hoa hướng dương hoạt động.
-
-Trên thực tế, các tấm pin mặt trời có cơ chế theo dõi mặt trời tạo ra nhiều hơn khoảng 30% năng lượng mỗi ngày so với tấm pin cố định.
-
-Dự án "Simple Dual-Axis Solar Tracker" được triển khai nhằm giải quyết vấn đề trên bằng cách sử dụng vi điều khiển ESP32, các cảm biến ánh sáng (LDR), và giao thức MQTT để điều khiển từ xa qua giao diện Node-RED Dashboard. Hệ thống này không chỉ cung cấp chế độ tự động mà còn cho phép điều khiển thủ công, mang lại sự linh hoạt và hiệu quả cao cho người dùng.
+Dự án "Simple Dual-Axis Solar Tracker" ra đời nhằm đáp ứng nhu cầu cấp thiết này, với mục tiêu không chỉ tăng hiệu suất năng lượng mà còn mang lại sự linh hoạt và tiện lợi trong sử dụng. Hệ thống này được xây dựng trên nền tảng vi điều khiển ESP32, sử dụng các cảm biến ánh sáng (LDR), và giao thức MQTT để điều khiển từ xa thông qua giao diện trực quan Node-RED Dashboard. Bên cạnh chế độ tự động, hệ thống còn hỗ trợ chế độ điều khiển thủ công, mở ra hướng tiếp cận linh hoạt và hiệu quả hơn cho người dùng trong việc khai thác năng lượng mặt trời.
 
 ---
 
 ## 2. Cấu tạo
 
 **Hình ảnh thực tế:**
-![Solar Tracker](images/anh.png)
+
+![Solar Tracker](images/anh.jpg)
 
 Hệ thống theo dõi mặt trời được cấu tạo bởi:
 
 - **ESP32 DOIT Devkit V1**: Bộ điều khiển chính, có nhiệm vụ xử lý tín hiệu và điều khiển động cơ.
 - **Cảm biến LDR (Light Dependent Resistor)**: Để đo cường độ ánh sáng từ các hướng khác nhau.
 - **Động cơ Servo**:
-  - 1 động cơ servo chuyển động ngang (theo trục azimuth).
-  - 1 động cơ servo chuyển động dọc (theo trục elevation).
+  - 1 động cơ servo chuyển động ngang (horizontal).
+  - 1 động cơ servo chuyển động dọc (vertical).
 
 ---
 
@@ -66,8 +63,10 @@ Hệ thống hoạt động dựa trên sự chênh lệch cường độ ánh s
 **Sơ đồ khối:**
 ![block_diagram](images/so_do_khoi.png)
 
+
 **Sơ đồ kết nối phần cứng:**
 ![Fritzing Diagram](images/fritzing.png)
+
 
 **Giao diện Dashboard:**
 ![Node-RED Dashboard](images/dashboard_UI.png)
@@ -81,6 +80,8 @@ Hệ thống hoạt động dựa trên sự chênh lệch cường độ ánh s
   - Sử dụng các nút trên Node-RED để điều khiển servo thủ công.
   - Nút BẬT/TẮT chế độ thủ công nằm ở chính giữa.
   - Các nút điều hướng gồm UP, DOWN, RIGHT, LEFT.
+
+    
 **Luồng Node-RED:**
 ![Node-RED Flow](images/node-red_flow.png)
 
