@@ -88,6 +88,7 @@ Hệ thống hoạt động dựa trên sự chênh lệch cường độ ánh s
 ---
 
 ## MQTT Topics
+### Esp32:
 - **Publish**:
   - `solar/light`: Gửi dữ liệu cường độ ánh sáng.
 - **Subscribe**:
